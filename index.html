@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root">
+      <header class="text-gray-100">
+        <div
+          class="container mx-auto flex flex-wrap flex-col md:flex-row items-center"
+        >
+          <a
+            href="#"
+            class="flex title-font font-medium items-center text-gray-900 md:mb-0"
+            ><img class="h-[4rem]" src="image/logo.jpg" alt=""
+          /></a>
+          <nav
+            id="nav"
+            class="max-[768px]:flex-col py-2 md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center max-[768px]:hidden"
+          >
+            <a
+              href="#"
+              class="lg:mr-5 text-center text-[#ff9800] text-xl font-semibold p-2 transition-all rounded-md hover:bg-[#ff9800] hover:text-white"
+              >Home</a
+            ><a
+              href="#"
+              class="lg:mr-5 text-center text-[#ff9800] text-xl font-semibold p-2 transition-all rounded-md hover:bg-[#ff9800] hover:text-white"
+              >Reservations</a
+            ><a
+              href="#"
+              class="lg:mr-5 text-center text-[#ff9800] text-xl font-semibold p-2 transition-all rounded-md hover:bg-[#ff9800] hover:text-white"
+              >Order&nbsp;now</a
+            ><a
+              href="#"
+              class="lg:mr-5 text-center text-[#ff9800] text-xl font-semibold p-2 transition-all rounded-md hover:bg-[#ff9800] hover:text-white"
+              >About&nbsp;us</a
+            ><a
+              href="#"
+              class="lg:mr-5 text-center text-[#ff9800] text-xl font-semibold p-2 transition-all rounded-md hover:bg-[#ff9800] hover:text-white"
+              >Contact&nbsp;us</a
+            >
+          </nav>
+          <button onclick="navChange()"
+            class="relative bottom-2 min-[768px]:hidden inline-flex items-center bg-[#ff9800] border-0 py-1 px-3 focus:outline-none rounded text-base mt-4 md:mt-0"
+          >
+            <img class="w-7" src="image/menu.svg" alt="" />
+          </button>
+        </div>
+      </header>
+      <div
+        class="h-[90vh]"
+        style="
+          width: 100vw;
+          background: url('image/cuisine-food-india-indian-wallpaper-preview.jpg')
+            center center / cover no-repeat fixed;
+        "
+      >
+        <div
+          style="
+            background: rgba(0, 0, 0, 0.72);
+            height: inherit;
+            width: inherit;
+          "
+        >
+          <div
+            class="my-3"
+            style="
+              z-index: 2;
+              border-radius: 100%;
+              display: flex;
+              margin: auto;
+              height: 50px;
+              width: 50px;
+              background: rgb(255, 152, 0);
+              position: relative;
+              top: 50px;
+            "
+          ></div>
+          <div
+            class="w-[70vw] relative top-[23px] h-[3px] m-auto bg-white"
+          ></div>
+          <div class="relative top-[40px]">
+            <center>
+              <h1
+                class="d-flex my-5 w-1/2 m-3 max-[600px]:w-[90vw] text-4xl justify-center md:text-7xl text-white"
+              >
+                Enjoy the best meal in the town
+              </h1>
+              <p class="m-2 my-5 text-white text-base w-[90vw] lg:text-4x1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                aliquid tempore commodi hic cumque aut deserunt quaerat facilis
+                consectetur laudantium. Quam excepturi dignissimos dolores
+                voluptatibus maxime architecto, quas distinctio autem?
+              </p>
+              <button
+                class="p-2 my-5 text-xl max-[429px]:mt-4 mt-2 text-white bg-[#ff9800] hover:bg-[#c17300] rounded-xl"
+              >
+                Order Now
+              </button>
+            </center>
+          </div>
+        </div>
+      </div>
+      <h1 class="font-sans text-5xl text-[#ff9800] text-center py-5">
+        We are the Best!!!
+      </h1>
+      <div
+        style="
+          background: url('image/coffee-and-cake.jpg') center center / cover
+            fixed;
+        "
+      >
+        <div
+          style="
+            background: rgba(0, 0, 0, 0.72);
+            height: inherit;
+            width: inherit;
+          "
+        >
+          <section class="text-[#ff9800] body-font">
+            <div class="container px-5 py-24 mx-auto">
+              <div class="text-center mb-20">
+                <h1
+                  class="sm:text-5xl text-3xl font-medium title-font text-[#ff9800] mb-4"
+                >
+                  Raw Denim Heirloom Man Braid
+                </h1>
+                <p
+                  class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-white"
+                >
+                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+                  taxidermy. Gastropub indxgo juice poutine, ramps microdosing
+                  banh mi pug.
+                </p>
+                <div class="flex mt-6 justify-center">
+                  <div
+                    class="w-16 h-1 rounded-full bg-[#ff9800] inline-flex"
+                  ></div>
+                </div>
+              </div>
+              <div
+                class="flex flex-wrap sm:-m-4 -mb-10 -mt-4 md:space-y-0 space-y-6"
+              >
+                <div
+                  class="p-4 md:w-1/3 flex flex-col text-center items-center"
+                >
+                  <div
+                    class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0"
+                  >
+                    <svg
+                      fill="none"
+                      stroke="#ff9800"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-10 h-10"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                    </svg>
+                  </div>
+                  <div class="flex-grow">
+                    <h2
+                      class="text-[#ff9800] text-lg title-font font-medium mb-3"
+                    >
+                      Shooting Stars
+                    </h2>
+                    <p class="leading-relaxed text-white text-base">
+                      Blue bottle crucifix vinyl post-ironic four dollar toast
+                      vegan taxidermy. Gastropub indxgo juice poutine, ramps
+                      microdosing banh mi pug VHS try-hard.
+                    </p>
+                  </div>
+                </div>
+                <div class="md:w-1/3 flex flex-col text-center items-center">
+                  <img
+                    class="h-[inherit] w-[90vw] border-[5px] border-solid border-[#ff9800]"
+                    src="image/coffee-and-cake.jpg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="p-4 md:w-1/3 flex flex-col text-center items-center"
+                >
+                  <div
+                    class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0"
+                  >
+                    <svg
+                      fill="none"
+                      stroke="#ff9800"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-10 h-10"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                      <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                  </div>
+                  <div class="flex-grow">
+                    <h2
+                      class="text-[#ff9800] text-lg title-font font-medium mb-3"
+                    >
+                      Neptune
+                    </h2>
+                    <p class="leading-relaxed text-white text-base">
+                      Blue bottle crucifix vinyl post-ironic four dollar toast
+                      vegan taxidermy. Gastropub indxgo juice poutine, ramps
+                      microdosing banh mi pug VHS try-hard.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="flex mx-auto mt-16 text-white bg-[#ff9800] border-0 py-2 px-8 focus:outline-none hover:bg-[#b37a24] rounded text-lg"
+              >
+                Button
+              </button>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="container px-5 py-24 mx-auto">
+        <center>
+          <h1
+            class="title-font sm:text-6xl text-3xl font-medium text-[#ff9800] mb-3"
+          >
+            Menus
+          </h1>
+        </center>
+        <div class="flex flex-wrap -m-4">
+          <div class="p-4 lg:w-1/3">
+            <div
+              class="h-full bg-gray-100 bg-opacity-75 rounded-lg overflow-hidden text-center relative"
+            >
+              <div>
+                <img
+                  class="h-[60vh] w-[90vw] object-cover border-[5px] border-solid border-[#ff9800]"
+                  src="image/photo-1472555794301-77353b152fb7.avif"
+                  alt=""
+                />
+              </div>
+              <div
+                class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4"
+              ></div>
+            </div>
+          </div>
+          <div class="p-4 lg:w-1/3">
+            <div
+              class="h-full bg-gray-100 bg-opacity-75 rounded-lg overflow-hidden text-center relative"
+            >
+              <div>
+                <img
+                  class="h-[60vh] w-[90vw] border-[5px] object-cover border-solid border-[#ff9800]"
+                  src="image/fresh-pasta-.avif"
+                  alt=""
+                />
+              </div>
+              <div
+                class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4"
+              ></div>
+            </div>
+          </div>
+          <div class="p-4 lg:w-1/3">
+            <div
+              class="h-full bg-gray-100 bg-opacity-75 rounded-lg overflow-hidden text-center relative"
+            >
+              <h1
+                class="title-font sm:text-6xl text-3xl font-medium text-[#ff9800] mb-3"
+              >
+                Our Menu
+              </h1>
+              <span class="title-font text-x2 font-medium text-black"
+                >Compliments to the cheif</span
+              >
+              <p class="leading-relaxed mb-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                dolor ipsam dolorem, mollitia, laudantium sunt labore eveniet
+                necessitatibus alias rerum itaque sed deserunt aperiam odit
+                provident fuga atque impedit a.
+              </p>
+              <button
+                class="p-2 text-xl max-[429px]:mt-4 mt-2 text-white bg-[#ff9800] hover:bg-[#c17300] rounded-xl"
+              >
+                Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        style="
+          background: url('image/Pizza-3007395.jpg') center center / cover fixed;
+        "
+      >
+        <div
+          style="
+            background: rgba(0, 0, 0, 0.72);
+            height: inherit;
+            width: inherit;
+          "
+        >
+          <section class="text-[#ff9800] body-font">
+            <div class="container px-5 py-24 mx-auto">
+              <div class="text-center mb-20">
+                <h1
+                  class="sm:text-5xl text-3xl font-medium title-font text-[#ff9800] mb-4"
+                >
+                  Raw Denim Heirloom Man Braid
+                </h1>
+                <p
+                  class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-white"
+                >
+                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+                  taxidermy. Gastropub indxgo juice poutine, ramps microdosing
+                  banh mi pug.
+                </p>
+                <div class="flex mt-6 justify-center">
+                  <div
+                    class="w-16 h-1 rounded-full bg-[#ff9800] inline-flex"
+                  ></div>
+                </div>
+              </div>
+              <div
+                class="flex flex-wrap sm:-m-4 -mb-10 -mt-4 md:space-y-0 space-y-6"
+              >
+                <div
+                  class="p-4 md:w-1/3 flex flex-col text-center items-center"
+                >
+                  <div
+                    class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0"
+                  >
+                    <svg
+                      fill="none"
+                      stroke="#ff9800"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-10 h-10"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                    </svg>
+                  </div>
+                  <div class="flex-grow">
+                    <h2
+                      class="text-[#ff9800] text-lg title-font font-medium mb-3"
+                    >
+                      Shooting Stars
+                    </h2>
+                    <p class="leading-relaxed text-white text-base">
+                      Blue bottle crucifix vinyl post-ironic four dollar toast
+                      vegan taxidermy. Gastropub indxgo juice poutine, ramps
+                      microdosing banh mi pug VHS try-hard.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="p-4 md:w-1/3 flex flex-col text-center items-center"
+                >
+                  <div
+                    class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0"
+                  >
+                    <svg
+                      fill="none"
+                      stroke="#ff9800"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-10 h-10"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                    </svg>
+                  </div>
+                  <div class="flex-grow">
+                    <h2
+                      class="text-[#ff9800] text-lg title-font font-medium mb-3"
+                    >
+                      Shooting Stars
+                    </h2>
+                    <p class="leading-relaxed text-white text-base">
+                      Blue bottle crucifix vinyl post-ironic four dollar toast
+                      vegan taxidermy. Gastropub indxgo juice poutine, ramps
+                      microdosing banh mi pug VHS try-hard.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="p-4 md:w-1/3 flex flex-col text-center items-center"
+                >
+                  <div
+                    class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0"
+                  >
+                    <svg
+                      fill="none"
+                      stroke="#ff9800"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-10 h-10"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                      <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                  </div>
+                  <div class="flex-grow">
+                    <h2
+                      class="text-[#ff9800] text-lg title-font font-medium mb-3"
+                    >
+                      Neptune
+                    </h2>
+                    <p class="leading-relaxed text-white text-base">
+                      Blue bottle crucifix vinyl post-ironic four dollar toast
+                      vegan taxidermy. Gastropub indxgo juice poutine, ramps
+                      microdosing banh mi pug VHS try-hard.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="flex mx-auto mt-16 text-white bg-[#ff9800] border-0 py-2 px-8 focus:outline-none hover:bg-[#b37a24] rounded text-lg"
+              >
+                Button
+              </button>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div>
+        <section class="text-gray-600 body-font">
+          <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-wrap -m-4">
+              <div class="p-4 lg:w-1/3">
+                <div
+                  class="h-full bg-gray-100 bg-opacity-75 rounded-lg overflow-hidden text-center relative"
+                >
+                  <h1
+                    class="title-font sm:text-6xl text-3xl font-medium text-[#ff9800] mb-3"
+                  >
+                    About us
+                  </h1>
+                  <span class="title-font text-x2 font-medium text-black"
+                    >Our story</span
+                  >
+                  <p class="leading-relaxed mb-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                    dolor ipsam dolorem, mollitia, laudantium sunt labore
+                    eveniet necessitatibus alias rerum itaque sed deserunt
+                    aperiam odit provident fuga atque impedit a.
+                  </p>
+                  <button
+                    class="p-2 text-xl max-[429px]:mt-4 mt-2 text-white bg-[#ff9800] hover:bg-[#c17300] rounded-xl"
+                  >
+                    Order Now
+                  </button>
+                </div>
+              </div>
+              <div class="p-4 lg:w-1/3">
+                <div
+                  class="h-full bg-gray-100 bg-opacity-75 rounded-lg overflow-hidden text-center relative"
+                >
+                  <div>
+                    <img
+                      class="h-[60vh] w-[90vw] object-cover border-[5px] border-solid border-[#ff9800]"
+                      src="image/table-for-two.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4"
+                  ></div>
+                </div>
+              </div>
+              <div class="p-4 lg:w-1/3">
+                <div
+                  class="h-full bg-gray-100 bg-opacity-75 rounded-lg overflow-hidden text-center relative"
+                >
+                  <div>
+                    <img
+                      class="h-[60vh] w-[90vw] object-cover border-[5px] border-solid border-[#ff9800]"
+                      src="image/pasta-spaghetti-plate-pan-with-shrimp.avif"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <h1 class="font-sans text-5xl text-[#ff9800] text-center py-5">
+        Have any Questions? Just ask!
+      </h1>
+      <div
+        class="h-[100vh] w-[100vw]"
+        style="
+          background: url('image/e594d337200536d04e08e6584a690275.jpeg') center
+            center / cover no-repeat fixed;
+        "
+      >
+        <div class="h-[inherit] w-[inherit] bg-[#0000007b]">
+          <div class="h-[inherit] w-[inherit] flex justify-center items-center">
+            <div
+              class="lg:w-1/3 opacity-85 sm:w-1/2 relative top-3 bg-black rounded-lg p-8 flex flex-col w-full m-auto md:mt-[10vh]z-10 shadow-md"
+            >
+              <center>
+                <h1
+                  class="text-[#ff9800] m-auto text-4x1"
+                  style="font-size: 39px"
+                >
+                  Contact us
+                </h1>
+              </center>
+              <div class="relative mb-6">
+                <label for="name" class="leading-7 text-sm text-[#ff9800]"
+                  >Name</label
+                ><input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                />
+              </div>
+              <div class="relative mb-6">
+                <label for="email" class="leading-7 text-sm text-[#ff9800]"
+                  >Email</label
+                ><input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                />
+              </div>
+              <div class="relative mb-6">
+                <label for="message" class="leading-7 text-sm text-[#ff9800]"
+                  >Message</label
+                ><textarea
+                  id="message"
+                  name="message"
+                  class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-[#ff9800] py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                ></textarea>
+              </div>
+              <button
+                class="text-white bg-[#ff9800] hover:animate-pulse border-0 py-2 px-6 focus:outline-none rounded text-lg"
+              >
+                Button
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="bg-black p-4 items-center">
+          <div class="flex justify-center pt-10 pb-14 md:pb-9">
+            <img
+              class="w-2/5 md:w-[25%] lg:w-[18%] xl:w-[15%]"
+              src="image/cucet-footer-logo.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="space-y-9 grid grid-cols-1 md:grid-cols-2 md:pl-24 md:pr-16 lg:grid-cols-4 lg:px-7 xl:px-14 xl:ml-16"
+          >
+            <div class="text-[#6d6d6d] font-[650] text-[16px] leading-7">
+              <div class="flex justify-start md:mt-10">
+                <h1
+                  class="text-white pb-[36px] font-sans uppercase font-normal tracking-wider underline underline-offset-[12px] decoration-[#ff9800]"
+                >
+                  Inform
+                </h1>
+                <span
+                  class="text-white font-sans uppercase font-normal tracking-wider"
+                  >ation</span
+                >
+              </div>
+              <p>Registration Start Date</p>
+              <p>Registration End Date</p>
+              <p>Exam Last Date</p>
+            </div>
+            <div
+              class="text-[#747474] text-[15px] font-[550] leading-7 tracking-wide md:"
+            >
+              <div>
+                <pre
+                  class="text-white pb-[34px] font-sans uppercase font-normal tracking-wider underline underline-offset-[12px] decoration-[#ff9800]"
+                >
+ dates &nbsp;</pre
+                >
+              </div>
+              <p>23 Dec 2021</p>
+              <p>30 May 2022</p>
+              <p>23 Dec 2021 to 31 May 2022</p>
+            </div>
+            <div class="md:flex flex-col justify-between">
+              <div
+                class="text-[#747474] text-[15px] font-[550] leading-7 tracking-wide"
+              >
+                <div class="flex justify-start">
+                  <h1
+                    class="text-white pb-[34px] font-sans uppercase font-normal tracking-wider underline underline-offset-[12px] decoration-[#ff9800]"
+                  >
+                    About
+                  </h1>
+                  <span
+                    class="text-white font-sans uppercase font-normal tracking-wider"
+                    >exam</span
+                  >
+                </div>
+                <p class="">
+                  <a class="hover:text-[#cacaca]" href="#">Apply</a>
+                </p>
+                <p class="">
+                  <a class="hover:text-[#cacaca]" href="#">Eligibility</a>
+                </p>
+                <p class="">
+                  <a class="hover:text-[#cacaca]" href="#"
+                    >Application Process</a
+                  >
+                </p>
+                <p class="">
+                  <a class="hover:text-[#cacaca]" href="#">Syllabus</a>
+                </p>
+              </div>
+              <div
+                class="text-[#747474] text-[15px] font-[550] leading-6 tracking-wide mt-9 md:order-5 md:pt-32 lg:pb-28"
+              >
+                <div class="flex justify-start md:-mt-32">
+                  <h1
+                    class="text-white pb-[38px] font-sans uppercase font-normal tracking-wider underline underline-offset-[12px] decoration-[#ff9800]"
+                  >
+                    suppor
+                  </h1>
+                  <span
+                    class="text-white font-sans uppercase font-normal tracking-wider"
+                    >t</span
+                  >
+                </div>
+                <p class="">
+                  <a href="#" class="hover:text-[#cacaca]">FAQ's</a>
+                </p>
+              </div>
+            </div>
+            <div
+              class="text-[#797878] text-[15px] font-[550] leading-6 tracking-wide md:order-4 lg:"
+            >
+              <div class="flex justify-start">
+                <h1
+                  class="text-white pb-[38px] font-sans uppercase font-normal tracking-wider underline underline-offset-[12px] decoration-[#ff9800]"
+                >
+                  get in t
+                </h1>
+                <span
+                  class="text-white font-sans uppercase font-normal tracking-wider"
+                  >ouch</span
+                >
+              </div>
+              <p class="space-x-3">
+                <i class="fa fa-home text-[17px]"></i
+                ><strong class="text-[#8b8b8b] text-[15px] tracking-wide"
+                  >Our Company</strong
+                >
+              </p>
+              <div class="leading-7">
+                <p class="">
+                  NH-70 Chandigarh-Ludhiana Highway, <br />
+                  Mohali, Punjab (INDIA) <br />
+                  General Helpline No:+91 987-6543-210
+                </p>
+              </div>
+              <div class="leading-7 mt-4 text-[15px] font-[500]">
+                <p class="space-x-3 hover:text-[#cacaca]">
+                  <i class="fa fa-phone text-[17px]"></i>
+                  <a href="#"> 1800 1800 88800</a>
+                </p>
+                <p class="space-x-3 hover:text-[#cacaca]">
+                  <i class="fa fa-phone text-[17px]"></i>
+                  <a href="#"
+                    >9946948000S (
+                    <span class="text-[13px] font-[500]">General Enquiry</span>
+                    )</a
+                  >
+                </p>
+                <p class="space-x-3 hover:text-[#cacaca]">
+                  <i class="fa fa-phone text-[17px]"></i>
+                  <a href="#"
+                    >994694700&nbsp;(
+                    <span class="text-[13px] font-[500]"
+                      >Technical Support: CUCET</span
+                    >
+                    )</a
+                  >
+                </p>
+                <p class="space-x-3 hover:text-[#cacaca]">
+                  <i class="fa fa-envelope text-[16px]"></i>
+                  <a href="#">admin@Company.in</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="divide-y divide-[#747474] contrast-200 mt-3 mb-3 md:-mt-4 md:-mb-2 lg:-mt-16 xl:-mt-24"
+          >
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+          </div>
+          <div
+            class="flex justify-center mb-4 md:mb-1 text-[#afafaf] text-center text-xl space-x-3"
+          >
+            <p>
+              <a
+                href="#"
+                class="w-6 h-6 bg-[#474747] hover:text-blue-500 transform ease-in-out duration-500 hover:bg-white rounded-full inline-block pt-[7px]"
+                ><i class="fa fa-facebook"></i
+              ></a>
+            </p>
+            <p>
+              <a
+                href="#"
+                class="w-6 h-6 bg-[#474747] hover:text-blue-500 transform ease-in-out duration-500 hover:bg-white rounded-full inline-block pt-[6px]"
+                ><i class="fa fa-twitter"></i
+              ></a>
+            </p>
+            <p>
+              <a
+                href="#"
+                class="w-6 h-6 bg-[#474747] hover:text-blue-500 transform ease-in-out duration-500 hover:bg-white rounded-full inline-block pt-[6px]"
+                ><i class="fa fa-instagram"></i
+              ></a>
+            </p>
+            <p>
+              <a
+                href="#"
+                class="w-6 h-6 bg-[#474747] hover:text-blue-500 transform ease-in-out duration-500 hover:bg-white rounded-full inline-block pt-[6px]"
+                ><i class="fa fa-linkedin"></i
+              ></a>
+            </p>
+            <p>
+              <a
+                href="#"
+                class="w-6 h-6 bg-[#474747] hover:text-blue-500 transform ease-in-out duration-500 hover:bg-white rounded-full inline-block pt-[6px]"
+                ><i class="fa fa-youtube"></i
+              ></a>
+            </p>
+            <p>
+              <a
+                href="#"
+                class="w-6 h-6 bg-[#474747] hover:text-blue-500 transform ease-in-out duration-500 hover:bg-white rounded-full inline-block pt-[6px]"
+                ><i class="fa fa-pinterest"></i
+              ></a>
+            </p>
+            <p>
+              <a
+                href="#"
+                class="w-6 h-6 bg-[#474747] hover:text-blue-500 transform ease-in-out duration-500 hover:bg-white rounded-full inline-block pt-[6px]"
+                ><i class="fa fa-telegram"></i
+              ></a>
+            </p>
+          </div>
+        </div>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://use.fontawesome.com/03f8a0ebd4.js"></script>
+      </div>
+    </div>
+    <script>
+
+      let nav = document.getElementById("nav")
+      const navChange=()=>{
+        nav.classList.toggle("max-\[768px\]\:hidden")   
+      }
+      </script>
+
+  </body>
+</html>
